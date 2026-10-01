@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    container_name: omniai-assistant
+    ports:
+      - "5555:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - WIDGET_SECRET=${WIDGET_SECRET}
+    volumes:
+      - ./storage:/app/storage
+    restart: always

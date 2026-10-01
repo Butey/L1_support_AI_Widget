@@ -1,0 +1,13 @@
+{
+  "llm_endpoint": "gemini",
+  "model_name": "gemini-3.8-flash",
+  "custom_models": "",
+  "api_key": "",
+  "api_key_pool": "",
+  "temperature": 0.5,
+  "top_p": 0.95,
+  "max_tokens": 2048,
+  "skills": "[]",
+  "mcp_servers": "{}",
+  "system_prompt": "You are a professional technical support AI assistant."
+}

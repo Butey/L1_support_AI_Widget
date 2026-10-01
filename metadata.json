@@ -1,0 +1,6 @@
+{
+  "name": "L1 Support AI Widget",
+  "description": "AI-powered technical support copilot integrated with Omnidesk, featuring contextual response suggestions, smart classification, and knowledge base sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

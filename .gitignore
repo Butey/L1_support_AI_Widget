@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment variables & local secrets
+.env*
+!.env.example
+
+# Runtime persistence & dynamic storage (keep only templates)
+storage/*.json
+storage/conversations*
+storage/analytics*
+storage/recognized_images*
+storage/settings*
+storage/kb*
+!storage/.gitkeep
+!storage/settings.example.json
+
+# Logs & temp files
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+
+# Backups
+backups/
+gemini_omni_backups/
