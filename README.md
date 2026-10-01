@@ -260,6 +260,17 @@ docker compose logs -f
 
 Сервер будет запущен на внешнем порту **5555** (согласно `docker-compose.yml`): **http://localhost:5555**
 
+### Запуск готового Docker-образа из GitHub Container Registry (GHCR):
+
+```bash
+docker run -d \
+  --name l1-support-ai-widget \
+  -p 5555:3000 \
+  --env-file .env \
+  -v $(pwd)/storage:/app/storage \
+  ghcr.io/butey/l1_support_ai_widget:latest
+```
+
 ---
 
 ## 📬 Настройка интеграции с Omnidesk
